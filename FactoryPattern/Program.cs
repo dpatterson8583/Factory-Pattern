@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var newveh1 = VehicleFactory.GetVehicle(4);
+
+            var newveh2 = VehicleFactory.GetVehicle(2);
+
+            Console.WriteLine($"{newveh1.GetType()} ");
+            newveh1.Drive();
+
+            Console.WriteLine($"{newveh2.GetType()}");
+            newveh2.Drive();
+
         }
     }
 }
